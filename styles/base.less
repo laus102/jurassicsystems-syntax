@@ -63,22 +63,30 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: @light-blue;
 }
 
 .keyword {
-  color: @purple;
+  color: @fuscia;
 
   &.control {
-    color: @purple;
+    color: @fuscia;
   }
 
+  // &.operator {
+  //   color: @syntax-text-color;
+  // }
+
   &.operator {
-    color: @syntax-text-color;
+    color: @fuscia;
+  }
+
+  &.operator.assignment, &.operator.comparison, &.operator.arithmetic {
+    color: @fuscia;
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @fuscia;
   }
 
   &.other.unit {
@@ -87,48 +95,54 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @fuscia;
+}
+
+.storage.type {
+  font-style: italic;
+  color: @soda-blue;
 }
 
 .constant {
   color: @orange;
 
   &.character.escape {
-    color: @cyan;
+    color: @soda-purple;
   }
 
   &.numeric {
-    color: @orange;
+    color: @soda-purple;
   }
 
   &.other.color {
-    color: @cyan;
+    color: @soda-purple;
   }
 
   &.other.symbol {
-    color: @green;
+    color: @soda-purple;
   }
 }
 
 .variable {
-  color: @red;
+  color: @white;
 
   &.interpolation {
     color: darken(@red, 10%);
   }
 
-  &.parameter.function {
-    color: @syntax-text-color;
+  &.parameter {
+    font-style: italic;
+    color: @orange;
   }
 }
 
 .invalid.illegal {
-  background-color: @red;
-  color: @syntax-background-color;
+  background-color: @fuscia;
+  color: @eggshell;
 }
 
 .string {
-  color: @green;
+  color: @yellow;
 
 
   &.regexp {
@@ -159,7 +173,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.heading,
     &.identity {
-      color: @blue;
+      color: @fuscia;
     }
 
     &.bold {
@@ -180,22 +194,31 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .support {
+  &.type {
+    font-style: italic;
+    color: @soda-blue;
+  }
+
   &.class {
-    color: @light-orange;
+    font-style: italic;
+    color: @soda-blue;
+  }
+  &.constant {
+    color: @soda-blue;
   }
 
   &.function  {
-    color: @cyan;
+    color: @soda-blue;
 
     &.any-method {
-      color: @blue;
+      color: @soda-blue;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @neon-green;
   }
   &.name.type {
     color: @light-orange;
@@ -203,10 +226,13 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.inherited-class {
-    color: @green;
+    font-style: italic;
+    text-decoration: underline;
+    color: @neon-green;
   }
+
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @neon-green;
   }
 
   &.name.section {
@@ -214,15 +240,15 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @red;
+    color: @fuscia;
     text-decoration: underline;
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @neon-green;
 
     &.id {
-      color: @blue;
+      color: @neon-green;
     }
   }
 }
@@ -261,7 +287,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.changed {
-    color: @purple;
+    color: @yellow;
   }
 
   &.deleted {
@@ -278,7 +304,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.inserted {
-    color: @green;
+    color: @neon-green;
   }
 
   &.list {
