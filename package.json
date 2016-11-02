@@ -1,8 +1,8 @@
 {
   "name": "jurassicsystems-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "1.0.0",
+  "description": "A purely aesthetic syntax theme inspired by Dennis Nedry’s Silicon Graphics IRIX system from the 1993 film 'Jurassic Park'",
   "keywords": [
     "syntax",
     "theme"
