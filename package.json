@@ -1,7 +1,7 @@
 {
   "name": "jurassicsystems-syntax",
   "theme": "syntax",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A syntax theme inspired by Dennis Nedry’s 'Jurassic Systems, System Security Interface Version 4.0.5, Alpha E'",
   "keywords": [
     "syntax",
