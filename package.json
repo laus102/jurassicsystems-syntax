@@ -1,13 +1,13 @@
 {
   "name": "jurassicsystems-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
-  "description": "A purely aesthetic syntax theme inspired by Dennis Nedry’s Silicon Graphics IRIX system from the 1993 film 'Jurassic Park'",
+  "version": "0.0.0",
+  "description": "A purely aesthetic syntax theme inspired by Dennis Nedry’s Silicon Graphics IRIX system from the 1993 film 'Jurassic Park.'",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/jurassicsystems-syntax",
+  "repository": "https://github.com/laus102/jurassicsystems-syntax.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
